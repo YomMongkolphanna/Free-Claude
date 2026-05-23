@@ -1,0 +1,10 @@
+# Environment & secrets
+config/.env
+
+# Runtime generated files
+config/litellm_runtime.yaml
+logs/proxy.pid
+logs/proxy.log
+
+# macOS
+.DS_Store
