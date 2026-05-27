@@ -51,12 +51,12 @@ model_list:
     litellm_params:
       model: "nvidia_nim/${MODEL_NAME}"
       api_key: os.environ/NVIDIA_NIM_API_KEY
+      max_tokens: 8192
 
 litellm_settings:
   drop_params: true
   num_retries: 0
   request_timeout: 120
-  max_budget: null
 EOF
 
 NVIDIA_NIM_API_KEY="${NIM_API_KEY}" \
